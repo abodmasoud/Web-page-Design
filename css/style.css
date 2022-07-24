@@ -1,0 +1,222 @@
+/* Start Variables */
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+  --secondary-color: ;
+  --section-background: ;
+  --main-duration: ;
+}
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(..//image/background.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.navbar {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  cursor: pointer;
+}
+
+.container .navbar .toggle-menu {
+  color: white;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.container .navbar .toggle-menu:hover {
+  color: rgb(219, 219, 219);
+}
+
+.container .navbar nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+.container .navbar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  /* margin-left: 40px; */
+  font-size: 13px;
+}
+
+.container .navbar nav ul li a:hover {
+  color: rgb(219, 219, 219);
+  /* color: white; */
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+.row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.col {
+  flex-basis: 50%;
+}
+
+h1 {
+  color: #fff;
+  font-size: 100px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+}
+
+button {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 900;
+  padding: 12px 0;
+  background: #fff;
+  /* border: 1px solid black; */
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: rgb(219, 219, 219);
+  /* color: white; */
+}
+
+.col2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 210px;
+  padding-right: 0;
+}
+.card {
+  width: 200px;
+  height: 230px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.card1 {
+  background-image: url(..//image/pic-1.png);
+}
+
+.card1:hover {
+  background-image: linear-gradient(
+      rgba(104, 97, 97, 0.199),
+      rgba(110, 102, 102, 0.548)
+    ),
+    url(..//image/pic-1.png);
+}
+
+.card2 {
+  background-image: url(..//image/pic-2.png);
+}
+
+.card2:hover {
+  background-image: linear-gradient(
+      rgba(104, 97, 97, 0.199),
+      rgba(110, 102, 102, 0.548)
+    ),
+    url(..//image/pic-2.png);
+}
+
+.card3 {
+  background-image: url(..//image/pic-3.png);
+}
+
+.card3:hover {
+  background-image: linear-gradient(
+      rgba(104, 97, 97, 0.199),
+      rgba(110, 102, 102, 0.548)
+    ),
+    url(..//image/pic-3.png);
+}
+
+.card4 {
+  background-image: url(..//image/pic-4.png);
+}
+
+.card4:hover {
+  background-image: linear-gradient(
+      rgba(104, 97, 97, 0.199),
+      rgba(110, 102, 102, 0.548)
+    ),
+    url(..//image/pic-4.png);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+.card p {
+  font-size: 8px;
+  text-shadow: 0 0 15px #000;
+}
